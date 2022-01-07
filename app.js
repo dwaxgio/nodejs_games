@@ -12,6 +12,10 @@ app.get("/pingpong", function (req, res) {
   res.sendFile(__dirname + "public/pingpong.html");
 });
 
+app.get("/rockpaperscissors", function (req, res) {
+  res.sendFile(__dirname + "public/rockpaperscissors.html");
+});
+
 http.listen(port, function () {
   console.log("listening on: http://localhost:" + port);
 });
